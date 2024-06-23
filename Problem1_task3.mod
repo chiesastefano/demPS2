@@ -62,7 +62,7 @@ end;
 
 // SIMULATION
 
-stoch_simul(order=1,periods=200);
+stoch_simul(order=1,periods=40);
 
 % Extract simulated data from Dynare output structure (assuming simulation has been performed)
 Y_simulated = oo_.endo_simul(strmatch('Y', M_.endo_names, 'exact'), :); % Extract simulated values of Y

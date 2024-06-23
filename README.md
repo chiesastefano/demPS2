@@ -6,6 +6,7 @@ Data has been imported from **FRED** using APIs.
 The following files are essential for understanding and correcting the assignment:
 - **Problem Set 2 Solution.pdf**: LaTex file with all the answers to the assignment questions;
 - **jupyter.ipynb**: runnable code in jupyter markown format.
+- **Problem1_task3.format**: Dynare code, log and graph for the third task of the first problem
 
 Note: to run the code directly from this project **you must add your own FRED key in the file "key.py"**.
 

@@ -63,3 +63,18 @@ end;
 // SIMULATION
 
 stoch_simul(order=1,periods=200);
+
+% Extract simulated data from Dynare output structure (assuming simulation has been performed)
+Y_simulated = oo_.endo_simul(strmatch('Y', M_.endo_names, 'exact'), :); % Extract simulated values of Y
+C_simulated = oo_.endo_simul(strmatch('C', M_.endo_names, 'exact'), :); % Extract simulated values of C
+L_simulated = oo_.endo_simul(strmatch('L', M_.endo_names, 'exact'), :); % Extract simulated values of L
+
+% Calculate standard deviation
+std_Y = std(Y_simulated); % Standard deviation of Y
+std_C = std(C_simulated); % Standard deviation of C
+std_L = std(L_simulated); % Standard deviation of L
+
+% Display or use the results
+disp(['Standard deviation of output (Y): ', num2str(std_Y)]);
+disp(['Standard deviation of consumption (C): ', num2str(std_C)]);
+disp(['Standard deviation of labor (L): ', num2str(std_L)]);

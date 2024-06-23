@@ -1,0 +1,69 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ... 
+Found 5 equation(s). 
+Evaluating expressions... 
+Computing static model derivatives (order 1). 
+Normalizing the static model... 
+Finding the optimal block decomposition of the static model... 
+2 block(s) found: 
+  1 recursive block(s) and 1 simultaneous block(s). 
+  the largest simultaneous block has 4 equation(s) 
+                                 and 4 feedback variable(s). 
+Computing dynamic model derivatives (order 1). 
+Normalizing the dynamic model... 
+Finding the optimal block decomposition of the dynamic model... 
+2 block(s) found: 
+  1 recursive block(s) and 1 simultaneous block(s). 
+  the largest simultaneous block has 4 equation(s) 
+                                 and 3 feedback variable(s). 
+Preprocessing completed. 
+Preprocessing time: 0h00m00s.
+
+MODEL SUMMARY
+
+  Number of variables:         5
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            0.000100
+
+POLICY AND TRANSITION FUNCTIONS
+                                   Y               C               L               K               A
+Constant                    0.267843        0.161777        0.496689        0.106066        1.000000
+K(-1)                       1.010101        0.610101               0        0.400000               0
+A(-1)                       0.254451        0.153689               0        0.100763        0.950000
+e                           0.267843        0.161777               0        0.106066        1.000000
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+Y                 0.258217        0.009134        0.000083       -0.057378       -0.610037
+C                 0.155963        0.005517        0.000030       -0.057378       -0.610037
+L                 0.496689        0.000000        0.000000             NaN             NaN
+K                 0.102254        0.003617        0.000013       -0.057378       -0.610037
+A                 0.978598        0.021769        0.000474       -0.021461       -0.490834
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         Y       C       L       K       A
+Y           1.0000  1.0000     NaN  1.0000  0.9807
+C           1.0000  1.0000     NaN  1.0000  0.9807
+L              NaN     NaN     NaN     NaN     NaN
+K           1.0000  1.0000     NaN  1.0000  0.9807
+A           0.9807  0.9807     NaN  0.9807  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+Y           0.9391  0.8493  0.7529  0.6779  0.6127
+C           0.9391  0.8493  0.7529  0.6779  0.6127
+L              NaN     NaN     NaN     NaN     NaN
+K           0.9391  0.8493  0.7529  0.6779  0.6127
+A           0.8820  0.7690  0.6571  0.6036  0.5428
+Total computing time : 0h00m02s
